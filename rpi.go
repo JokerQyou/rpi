@@ -98,7 +98,7 @@ import "C"
 import "unsafe"
 
 import (
-	"bitbucket.org/sndnvaps/callback/exp/callback"
+	"github.com/gofly/rog-go/callback/exp/callback"
 	"errors"
 	"fmt"
 	"sync"

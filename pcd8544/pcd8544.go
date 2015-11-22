@@ -1,10 +1,10 @@
 package pcd8544
 
 /*
-#cgo LDFLAGS: -L . -lPCD8544 -lwiringPi
+#cgo LDFLAGS: -L/usr/local/lib -lPCD8544 -lwiringPi
 
 #include <wiringPi.h>
-#include <PCD8544.h>
+#include "../lib/PCD8544/PCD8544.h"
 #include <stdio.h>
 #include <stdlib.h>
 

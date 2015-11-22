@@ -98,7 +98,7 @@ import "C"
 import "unsafe"
 
 import (
-	"github.com/gofly/rog-go/callback/exp/callback"
+	"github.com/gofly/rog-go/exp/callback"
 	"errors"
 	"fmt"
 	"sync"

@@ -55,9 +55,9 @@ func LCDsetPixel(x uint8, y uint8, color uint8) {
 	C.LCDsetPixel(C.uint8_t(x), C.uint8_t(y), C.uint8_t(color))
 }
 
-func LCDgetPixel(x uint8, y uint8) uint8 {
-	n, err := C.LCDgetPixel(C.uint8_t(x), C.uint8_t(y))
-	return n
+func LCDgetPixel(x uint8, y uint8) int {
+	n, _ := C.LCDgetPixel(C.uint8_t(x), C.uint8_t(y))
+	return int(n)
 }
 
 func LCDfillcircle(x0 uint8, y0 uint8, r uint8, color uint8) {
@@ -100,7 +100,7 @@ func LCDshowLogo() {
 	C.LCDshowLogo()
 }
 
-func LCDdrawchar(x uint8, line uint8, c string) {
+func LCDdrawchar(x uint8, line uint8, c byte) {
 	C.LCDdrawchar(C.uint8_t(x), C.uint8_t(line), C.char(c))
 }
 

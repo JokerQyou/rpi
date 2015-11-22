@@ -21,6 +21,8 @@ import "C"
 const (
 	BLACK = 1
 	WHITE = 0
+	LCDWIDTH = 84
+	LCDHEIGHT = 48
 )
 
 func Test(s1 string, s2 string) {
